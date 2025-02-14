@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's, Indah!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #ffdde1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #ff477e;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .love-note {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .secret-btn {
+            margin-top: 20px;
+            background: #ff477e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .secret-btn:hover {
+            background: #e03e6d;
+        }
+        #secret-photo {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Happy Valentine's Day, Indah! ❤️</h1>
+        <p>Dari Dzahab untuk Indah, cewek paling spesial di dunia!</p>
+        
+        <div class="gallery">
+            <img src="foto1.jpg" alt="Foto 1">
+            <img src="foto2.jpg" alt="Foto 2">
+            <img src="foto3.jpg" alt="Foto 3">
+        </div>
+
+        <div class="love-note">
+            <h2>Untuk Indah, dari Dzahab</h2>
+            <p>Indah, setiap hari bersamamu itu seperti lagu No.1 Party Anthem—selalu bikin hati bahagia. Terima kasih sudah jadi bagian dari hidupku. Semoga hari ini penuh cinta dan senyum manismu selalu ada untukku! 💕</p>
+        </div>
+
+        <button class="secret-btn" onclick="showSecret()">Klik kalau sayang Dzahab 😆</button>
+        <img id="secret-photo" src="foto4.jpg" alt="Foto Aib" width="250px">
+    </div>
+
+    <script>
+        function showSecret() {
+            document.getElementById("secret-photo").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
